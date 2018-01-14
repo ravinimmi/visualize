@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+
+<body>
+  <div>
+    <label>Principal</label>
+    <input id="principal" value="100000"></input>
+
+    <label>Interest</label>
+    <input id="interest" value="12"></input>
+
+    <label>Time Period (years)</label>
+    <select id="period">
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+    </select>
+
+    <label>Graph</label>
+    <select id="graph">
+      <option value="comparison">Savings Comparison</option>
+      <option value="compound">Compound Interest</option>
+    </select>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div style="height: 1000px; width: 1000px;">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
